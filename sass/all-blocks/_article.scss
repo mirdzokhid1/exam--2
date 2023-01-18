@@ -1,0 +1,118 @@
+.article {
+    position: relative;
+    margin-top: 266px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 200px;
+    &__secret {
+        display: none;
+        @include tablet {
+            display: block;
+            margin-left: 140px;
+            text-align: center;
+        }
+        @include mobile {
+            margin-left: 40px;
+        }
+    }
+    &__img1 {
+        position: absolute;
+        top: 270px;
+        right: -150px;
+        @include mobile {
+            right: -315px;
+        }
+    }
+    &__img2 {
+        z-index: 1;
+        position: absolute;
+        left: -160px;
+        @include tablet {
+            left: -40px;
+        }
+    }
+    &__img3 {
+        z-index: 1;
+        position: absolute;
+        bottom: 210px;
+        right: -160px;
+        @include tablet {
+            bottom: 740px;
+            right: -15px;
+        }
+        @include mobile {
+            right: -110px;
+        }
+    }
+    &__circle1 {
+        z-index: 2;
+        position: absolute;
+        right: -150px;
+        @include tablet {
+            right: -20px;
+        }
+        @include mobile {
+            display: none;
+        }
+    }
+    &__circle2 {
+        z-index: 2;
+        position: absolute;
+        left: -160px;
+        @include tablet {
+            left: -20px;
+        }
+        @include mobile {
+            display: none;
+        }
+    }
+    &__circle3 {
+        z-index: 2;
+        position: absolute;
+        right: -160px;
+        @include tablet {
+            right: -15px;
+        }
+        @include mobile {
+            display: none;
+        }
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        @include tablet {
+            display: none;
+        }
+        &--h2 {
+            width: 435px;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            font-family: $main-family;
+            letter-spacing: -2.14286px;
+            color: #495567;
+            margin-bottom: 24px;
+        }
+        &--p {
+            width: 445px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: #939CAA;
+            font-family: $sub-family;
+            margin-bottom: 40px;
+        }
+    }
+    &__right {
+        &--img {
+            @include tablet {
+                margin-left: 90px;
+            }
+            @include mobile {
+                margin-left: 40px;
+            }
+        }
+    }
+}

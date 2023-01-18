@@ -1,0 +1,88 @@
+footer {
+    margin-top: 100px;
+}
+
+.footer1 {
+    background-image: url(../../images/footer-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    @include tablet {
+        background-image: url(../../images/tablet-foot-back.png);
+        height: 350px;
+    }
+    @include mobile {
+        background-image: url(../../images/mobile-foot-back.png);
+        height: 400px;
+    }
+    &__part1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 77px;
+        @include tablet {
+            text-align: center;
+            flex-direction: column;
+            row-gap: 40px;
+        }
+        &--h2 {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            font-family: $main-family;
+            color: $color;
+            width: 410px;
+            letter-spacing: -2.14286px;
+            @include mobile {
+                width: 413px;
+            }
+        }
+    }
+}
+
+.footer2 {
+    width: 100%;
+    background: #333A44;
+    height: 96px;
+    @include mobile {
+        height: 450px;
+    }
+    &__part2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 40px;
+        @include mobile {
+            flex-direction: column;
+            padding-top: 80px;
+        }
+    }
+    &__left {
+        display: flex;
+        gap: 58.58px;
+        @include mobile {
+            flex-direction: column;
+        }
+        &--menu {
+            display: flex;
+            gap: 32px;
+            @include mobile {
+                flex-direction: column;
+                align-items: center;
+                row-gap: 16px;
+                padding-bottom: 87.5px;
+            }
+        }
+    }
+    &__list {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        font-family: $main-family;
+        &--link {
+            text-decoration: none;
+            color: #939CAA;
+        }
+    }
+}
